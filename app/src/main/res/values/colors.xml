@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Created by KHALID EL MRABTI&Khalid Coding on 02/06/20.
+  Lamp control with two switches an android application made using android studio and kotlin
+ -->
+
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <!--
+      Created by KHALID EL MRABTI&Khalid Coding on 02/06/20.
+      Lamp control with two switches an android application made using android studio and kotlin
+     -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>
