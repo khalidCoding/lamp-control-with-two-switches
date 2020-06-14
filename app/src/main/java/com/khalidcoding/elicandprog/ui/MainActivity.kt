@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import android.widget.Button
 import android.widget.ImageView
 import com.khalidcoding.elicandprog.R
 import com.khalidcoding.elicandprog.pojo.Lamp
@@ -42,15 +41,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.switch1_btn -> {
-                smart(switch1, switch1_btn)
+                turnLightOnOrOff(switch1, switch1_btn)
             }
             R.id.switch2_btn -> {
-                smart(switch2, switch2_btn)
+                turnLightOnOrOff(switch2, switch2_btn)
             }
         }
     }
 
-    private fun smart(switch : Switch, btn: ImageView) {
+    private fun turnLightOnOrOff(switch : Switch, btn: ImageView) {
 
         if (switch.getSwitchStat() == switch.up) {
             switch.setSwitchDown(btn)
@@ -67,7 +66,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         lamp.setLampStat()
     }
 
-    fun init() {
+
+    private fun init() {
         switch1.down = false
         switch1.up = true
         switch2.down = false
