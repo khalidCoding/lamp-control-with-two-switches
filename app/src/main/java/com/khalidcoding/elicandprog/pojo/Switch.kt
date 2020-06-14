@@ -13,8 +13,9 @@ abstract class Switch(){
     var down = false
 
     abstract fun setSwitchUp(img:ImageView)
-
     abstract fun setSwitchDown(img: ImageView)
+    abstract fun setSwitchStat()
+    abstract fun getSwitchStat():Boolean
 
 
 }

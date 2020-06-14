@@ -8,7 +8,7 @@ import com.khalidcoding.elicandprog.R
  * Lamp control with two switches an android application made using android studio and kotlin
  */
 
-open class Switch1 : Switch(),SwitchState {
+open class Switch1 : Switch() {
 
     private var currentState = true
 
@@ -32,7 +32,7 @@ open class Switch1 : Switch(),SwitchState {
         }
     }
 
-      fun getSwitchStat():Boolean{
+    override fun getSwitchStat():Boolean{
          return currentState
     }
 }
