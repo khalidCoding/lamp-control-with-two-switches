@@ -22,14 +22,14 @@ open class Switch2 : Switch() {
     }
 
     override fun setSwitchStat() {
-        if (currentState==this.up){
-            this.up = false
-            this.down = true
-            currentState = this.down
-        }else if(currentState==this.down){
-            this.up = true
-            this.down = false
-            currentState = this.up
+        if (currentState==up){
+            up = false
+            down = true
+            currentState = down
+        }else if(currentState==down){
+            up = true
+            down = false
+            currentState = up
         }
     }
 
